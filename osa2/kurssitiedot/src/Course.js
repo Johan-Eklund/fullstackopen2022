@@ -12,7 +12,11 @@ const Header = ({ name }) => <h1>{name}</h1>;
 
 const Total = ({ parts }) => {
   let sum = parts.reduce((total, part) => part.exercises);
-  return <p>Number of exercises: {sum}</p>;
+  return (
+    <p>
+      <strong>Number of exercises: {sum}</strong>
+    </p>
+  );
 };
 
 const Part = ({ part }) => (
